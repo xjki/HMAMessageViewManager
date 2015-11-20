@@ -2,8 +2,7 @@
 
 Dead simple notification message banners (appearing from bottom) for iOS. 
 Xcode 7 and iOS9 SDK.
-
-![example mov](https://cloud.githubusercontent.com/assets/747340/11300776/6f3db05a-8f9a-11e5-8390-5af217983676.gif)
+![example mov](https://cloud.githubusercontent.com/assets/747340/11300924/7f996164-8f9b-11e5-9830-9d29793ba143.gif)
 
 * No dependencies
 * Rotation support (uses autolayout)
