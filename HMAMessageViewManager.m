@@ -1,0 +1,91 @@
+#import "HMAMessageViewManager.h"
+
+
+@interface HMAMessageViewManager()
+
+/// List of managed messages
+@property (nonatomic, strong) NSMutableArray<HMAMessageView *> *messages;
+
+@end
+
+
+@implementation HMAMessageViewManager
+
+#pragma mark Private methods
+
+- (instancetype) init {
+    if (self = [super init]) {
+        _messages = [NSMutableArray new];
+    }
+    return self;
+}
+
+- (nullable HMAMessageView *) currentMessageForHostingView:(nonnull UIView *)pHostingView {
+    HMAMessageView *message = nil;
+    for (UIView *subview in [pHostingView subviews]) {
+        if ([subview isMemberOfClass:[HMAMessageView class]]) {
+            message = (HMAMessageView *)subview;
+            break;
+        }
+    }
+    return message;
+}
+
+
+#pragma mark Public methods
+
++ (instancetype) sharedManager {
+    static HMAMessageViewManager *sharedManager = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedManager = [[HMAMessageViewManager alloc] init];
+    });
+    return sharedManager;
+}
+
+
+- (HMAMessageView *) showMessageInController:(UIViewController *)pController
+                                       title:(NSString *)pTitle
+                                    subtitle:(NSString *)pSubtitle
+                                        type:(HMAMessageViewType)pType
+{
+    @synchronized(self) {
+        // for UITableViewController use navigation controller view for displaying message
+        UIView *hostingView = ([pController isKindOfClass:[UITableViewController class]]) ? pController.navigationController.view : pController.view;
+        HMAMessageView *message = [[HMAMessageView alloc] initWithTitle:pTitle subtitle:pSubtitle type:pType inView:hostingView];
+        [self.messages addObject:message];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            HMAMessageView *existingMessage = [self currentMessageForHostingView:hostingView];
+            if (existingMessage) {
+                if (existingMessage.isActiveMessage) {
+                    [existingMessage hideMessage];
+                }
+            }
+            [message showMessage];
+        });
+        return message;
+    }
+}
+
+
+- (void) messageViewDidHide:(HMAMessageView *)pMessage {
+    @synchronized(self) {
+        [self.messages removeObject:pMessage];
+    }
+}
+
+
+- (void) hideAllMessages {
+    @synchronized(self) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            for (HMAMessageView *message in self.messages) {
+                if (message.isActiveMessage) {
+                    [message hideMessage];
+                }
+            };
+        });
+    }
+}
+
+
+@end
