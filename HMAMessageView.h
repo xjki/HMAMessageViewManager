@@ -24,11 +24,12 @@ typedef NS_ENUM(NSInteger, HMAMessageViewType) {
 /// Returns YES if message is currently visible on screen
 @property (nonatomic, readonly) BOOL isActiveMessage;
 
-/// Returns message to be shown (using show method) in hosting view
+/// Inits message to be shown (using show method) in hosting view
 - (nullable instancetype) initWithTitle:(nonnull NSString *)pTitle
                                subtitle:(nullable NSString *)pSubtitle
                                    type:(HMAMessageViewType)pType
-                                 inView:(nonnull UIView *)pHostingView;
+                                 inView:(nonnull UIView *)pHostingView
+                       tabBarController:(nullable UITabBarController *)pTabBarController;
 
 /// Show message by adding to hosting view and then animating from bottom, authodes in seconds defined in kMessageViewDismissInSeconds
 - (void) showMessage;

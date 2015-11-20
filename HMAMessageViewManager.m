@@ -3,7 +3,6 @@
 
 @interface HMAMessageViewManager()
 
-/// List of managed messages
 @property (nonatomic, strong) NSMutableArray<HMAMessageView *> *messages;
 
 @end
@@ -50,9 +49,13 @@
                                         type:(HMAMessageViewType)pType
 {
     @synchronized(self) {
-        // for UITableViewController use navigation controller view for displaying message
+        // for UITableViewController use navigation controller for displaying message
         UIView *hostingView = ([pController isKindOfClass:[UITableViewController class]]) ? pController.navigationController.view : pController.view;
-        HMAMessageView *message = [[HMAMessageView alloc] initWithTitle:pTitle subtitle:pSubtitle type:pType inView:hostingView];
+        HMAMessageView *message = [[HMAMessageView alloc] initWithTitle:pTitle
+                                                               subtitle:pSubtitle
+                                                                   type:pType
+                                                                 inView:hostingView
+                                                       tabBarController:pController.tabBarController];
         [self.messages addObject:message];
         dispatch_async(dispatch_get_main_queue(), ^{
             HMAMessageView *existingMessage = [self currentMessageForHostingView:hostingView];

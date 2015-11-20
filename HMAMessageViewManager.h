@@ -26,7 +26,7 @@
 - (void) hideAllMessages;
 
 /// Inform manager that message has been hidden to remove it from managed messages list
-/// Will be called by HMAMeesageView after hiding message (automatically or by user taping on message view)
+/// Will be called by HMAMessageView after hiding message (automatically or by user taping on message view)
 - (void) messageViewDidHide:(nonnull HMAMessageView *)pMessage;
 
 @end
