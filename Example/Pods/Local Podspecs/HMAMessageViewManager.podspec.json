@@ -1,0 +1,22 @@
+{
+  "name": "HMAMessageViewManager",
+  "version": "0.1.0",
+  "summary": "A short description of HMAMessageViewManager.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/HMAMessageViewManager",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "jki": "jki@jki.lv"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/HMAMessageViewManager.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "HMAMessageViewManager/Classes/**/*"
+}

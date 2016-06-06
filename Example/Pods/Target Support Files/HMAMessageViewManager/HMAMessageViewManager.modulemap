@@ -1,0 +1,6 @@
+framework module HMAMessageViewManager {
+  umbrella header "HMAMessageViewManager-umbrella.h"
+
+  export *
+  module * { export * }
+}
