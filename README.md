@@ -5,7 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/HMAMessageViewManager.svg?style=flat)](http://cocoapods.org/pods/HMAMessageViewManager)
 [![Platform](https://img.shields.io/cocoapods/p/HMAMessageViewManager.svg?style=flat)](http://cocoapods.org/pods/HMAMessageViewManager)
 
-Dead simple notification message banners (appearing from bottom) for iOS. 
+Dead simple notification message banners (appearing from bottom) for iOS.
+
 ![example mov](https://cloud.githubusercontent.com/assets/747340/11300924/7f996164-8f9b-11e5-9830-9d29793ba143.gif)
 
 * No dependencies
@@ -22,10 +23,7 @@ Message banner hides automatically after seconds defined with kMessageViewDismis
 ```objective-c
 #import "HMAMessageViewManager.h"
 ...
-[[HMAMessageViewManager sharedManager] showMessageInController:self
-                                                         title:@"Oops!"
-                                                      subtitle:@"Did not expected this"
-                                                          type:HMAMessageViewTypeWarning];
+[[HMAMessageViewManager sharedManager] showMessageInController:self title:@"Oops!" subtitle:@"Did not expected this" type:HMAMessageViewTypeWarning];
 ```
 
 For convenience you can also add simple UIViewController category class, for  example
@@ -36,10 +34,8 @@ For convenience you can also add simple UIViewController category class, for  ex
 
 @implementation UIViewController (HMAMessages)
 
-- (void) showWarningWithTitle:(NSString *)pTitle {
-    [self showMessageWithTitle:NSLocalizedString(@"Ooops!", @"Warning title for invalid data")
-                      subtitle:pTitle
-                   messageType:HMAMessageViewTypeWarning];
+- (void) my_showWarningMessage:(NSString *)pTitle {
+    [self showMessageWithTitle:NSLocalizedString(@"Ooops!", @"Warning title for invalid data") subtitle:pTitle messageType:HMAMessageViewTypeWarning];
 }
 
 @end
@@ -48,12 +44,12 @@ For convenience you can also add simple UIViewController category class, for  ex
 and then just use
 
 ```objective-c
-[myController showWarningWithTitle:@"Wrong email address"];
+[myController my_showWarningMessage:@"Wrong email address"];
 ```
 
 ## Customization
 
-To customize font for message title and subtitle in you app delegate (or any other place setting default appearance):
+To customize font/font size for message title and subtitle in you app delegate (or any other place setting default appearance):
 
 ```objective-c
 #import "HMAMessageView.h"

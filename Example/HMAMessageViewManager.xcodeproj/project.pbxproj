@@ -21,6 +21,7 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		681FA1CF1D057B590006CAB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 681FA1CE1D057B590006CAB7 /* LaunchScreen.storyboard */; };
+		681FA1D11D05863E0006CAB7 /* CHANGELOG.md in Sources */ = {isa = PBXBuildFile; fileRef = 681FA1D01D05863E0006CAB7 /* CHANGELOG.md */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		D2AAE33C4090E1E74AD55F36 /* Pods_HMAMessageViewManager_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D59FBD69DF56D1BBBCE59A7 /* Pods_HMAMessageViewManager_Example.framework */; };
 		EA50ED81DDDCD3F01E2CF5A2 /* Pods_HMAMessageViewManager_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1F06DC0E42588D707D1D0F /* Pods_HMAMessageViewManager_Tests.framework */; };
@@ -60,6 +61,7 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		681FA1CE1D057B590006CAB7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		681FA1D01D05863E0006CAB7 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
 		6D59FBD69DF56D1BBBCE59A7 /* Pods_HMAMessageViewManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HMAMessageViewManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8E84BC5FB4A9A8849D4A58C8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
+				681FA1D01D05863E0006CAB7 /* CHANGELOG.md */,
 				0586CF14A62BD50F1A10E07A /* HMAMessageViewManager.podspec */,
 				F4A650BDC79CFD8EA65BF416 /* README.md */,
 				8E84BC5FB4A9A8849D4A58C8 /* LICENSE */,
@@ -397,6 +400,7 @@
 				6003F59E195388D20070C39A /* HMAAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* HMAViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				681FA1D11D05863E0006CAB7 /* CHANGELOG.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
