@@ -1,9 +1,8 @@
 //
-//  HMAMessageViewManager.h - on screen messages banner manager for info/warnings/errors.
-//  Design limitations: messages appear from bottom, only one message on the view (showing new message dismisses previous message)
+//  HMAMessageViewManager.h - on screen messages banner manager for displaying info/success/warning/error messages.
+//  Design limitations: messages appear from bottom, only one message on the view (showing new message dismisses previous messages)
 //
-//  Created by Jurgis Kirsakmens on 19.11.15.
-//  Copyright © 2015 Jurgis Kirsakmens. All rights reserved.
+//  Copyright © 2016 Jurgis Kirsakmens. All rights reserved.
 //
 
 @import Foundation;

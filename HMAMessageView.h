@@ -1,8 +1,7 @@
 //
 //  HMAMessageView.h - Notification messages used by HMAMessageViewManager
 //
-//  Created by Jurgis Kirsakmens on 19.11.15.
-//  Copyright © 2015 Jurgis Kirsakmens. All rights reserved.
+//  Copyright © 2016 Jurgis Kirsakmens. All rights reserved.
 //
 
 @import UIKit;
@@ -18,8 +17,8 @@ typedef NS_ENUM(NSInteger, HMAMessageViewType) {
 
 @interface HMAMessageView : UIView
 
-@property (nonatomic,strong, nullable) UIFont *titleFont UI_APPEARANCE_SELECTOR;
-@property (nonatomic,strong, nullable) UIFont *subtitleFont UI_APPEARANCE_SELECTOR;
+@property (nonatomic, strong, nullable) UIFont *titleFont UI_APPEARANCE_SELECTOR;
+@property (nonatomic, strong, nullable) UIFont *subtitleFont UI_APPEARANCE_SELECTOR;
 
 /// Returns YES if message is currently visible on screen
 @property (nonatomic, readonly) BOOL isActiveMessage;
@@ -29,7 +28,7 @@ typedef NS_ENUM(NSInteger, HMAMessageViewType) {
                                subtitle:(nullable NSString *)pSubtitle
                                    type:(HMAMessageViewType)pType
                                  inView:(nonnull UIView *)pHostingView
-                                 toolbar:(nullable UIToolbar *)pToolbar
+                                toolbar:(nullable UIToolbar *)pToolbar
                        tabBarController:(nullable UITabBarController *)pTabBarController;
 
 /// Show message by adding to hosting view and then animating from bottom, authodes in seconds defined in kMessageViewDismissInSeconds
