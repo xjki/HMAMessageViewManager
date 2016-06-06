@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## HMAMessageViewManager
 
-Copyright (c) 2016 jki <jki@jki.lv>
+Copyright (c) 2016 Jurgis Kirsakmns <jki@jki.lv>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

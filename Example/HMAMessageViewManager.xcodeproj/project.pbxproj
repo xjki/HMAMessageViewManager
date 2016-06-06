@@ -553,7 +553,7 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA9C0B503C3789467387B387 /* Pods-HMAMessageViewManager_Example.debug.xcconfig */;
+			baseConfigurationReference = 588E7BBF361F9F9AA8F2143B /* Pods-HMAMessageViewManager_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -577,7 +577,7 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B3C6B5BD68F041334887188C /* Pods-HMAMessageViewManager_Example.release.xcconfig */;
+			baseConfigurationReference = A40601D6159EB817A8A4A871 /* Pods-HMAMessageViewManager_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
