@@ -3,7 +3,7 @@ language: objective-c
     # - brew update
     # - brew install xctool
 script:
-    - xcodebuild clean build test -workspace Example/HMAMessageViewManager.xcworkspace -scheme HMAMessageViewManager-Tests  -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+    - xcodebuild clean build test -workspace Example/HMAMessageViewManager.xcworkspace -scheme HMAMessageViewManager-Tests -sdk iphonesimulator -arch i386 ONLY_ACTIVE_ARCH=NO
 
 notifications:
   email:
