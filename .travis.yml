@@ -3,18 +3,11 @@ language: objective-c
     # - brew update
     # - brew install xctool
 script:
-    - xcodebuild clean build test -workspace ActionSheetPicker-3.0.xcworkspace -scheme ActionSheetPickerTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
-
-# - xctool -workspace ActionSheetPicker-3.0.xcworkspace -scheme CoreActionSheetPicker build
-# - xctool -workspace ActionSheetPicker-3.0.xcworkspace -scheme ActionSheetPickerTests test
-
-# xcode_workspace: ActionSheetPicker-3.0.xcworkspace
-# xcode_scheme: ActionSheetPickerTests
-# xcode_sdk: iphonesimulator
+    - xcodebuild clean build test -workspace Example/HMAMessageViewManager.xcworkspace -scheme HMAMessageViewManager-Tests  -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
 
 notifications:
   email:
     recipients:
-      - sky4winder+actionSheetPicker@gmail.com
+      - jki@jki.lv
     on_success: never # [always|never|change]
     on_failure: change # [always|never|change]
