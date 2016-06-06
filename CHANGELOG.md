@@ -1,5 +1,15 @@
 # Change Log
 
+## [0.1.2](https://github.com/xjki/HMAMessageViewManager/tree/0.1.2) (2016-06-06)
+[Full Changelog](https://github.com/xjki/HMAMessageViewManager/compare/0.1.1...0.1.2)
+
+**Implemented enhancements:**
+
+- Ad tests [\#4](https://github.com/xjki/HMAMessageViewManager/issues/4)
+
+## [0.1.1](https://github.com/xjki/HMAMessageViewManager/tree/0.1.1) (2016-06-06)
+[Full Changelog](https://github.com/xjki/HMAMessageViewManager/compare/0.1.0...0.1.1)
+
 ## [0.1.0](https://github.com/xjki/HMAMessageViewManager/tree/0.1.0) (2016-06-06)
 **Fixed bugs:**
 
