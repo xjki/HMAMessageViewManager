@@ -1,11 +1,11 @@
 language: objective-c
 osx_image: xcode7.3
-xcode_sdk: iphonesimulator8.1
 # before_install:
     # - brew update
     # - brew install xctool
 script:
-    - xcodebuild clean build test -workspace Example/HMAMessageViewManager.xcworkspace -scheme HMAMessageViewManager-Tests ONLY_ACTIVE_ARCH=NO
+    - xcodebuild -showsdks
+    - xcodebuild clean build test -workspace Example/HMAMessageViewManager.xcworkspace -scheme HMAMessageViewManager-Tests -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO
 
 notifications:
   email:
