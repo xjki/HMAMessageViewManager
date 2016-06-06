@@ -2,10 +2,9 @@ use_frameworks!
 
 target 'HMAMessageViewManager_Example' do
   pod 'HMAMessageViewManager', :path => '../'
-
-  target 'HMAMessageViewManager_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end
+
+target 'HMAMessageViewManager_Tests' do
+    pod 'HMAMessageViewManager', :path => '../'
+end
+

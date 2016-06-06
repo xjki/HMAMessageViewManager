@@ -7,22 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0188A5EAB1608E8F8E7A72949E0AA83F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		08AD6E531D8AFAE66BAEA1F1CF870666 /* Pods-HMAMessageViewManager_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B00F93FA6868642C9847E1063F27D60B /* Pods-HMAMessageViewManager_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0DA91D6CD8A8205B0EBC20BDF332CC28 /* HMAMessageViewManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6964803B90C16D3B21014A221437731E /* HMAMessageViewManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		30A22F2837DCADF5A282210CA8825955 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		3DCF1511ECF1418A9684160D3197D538 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		4A242BBBD9AFB0B4172C7F4F21507E60 /* Pods-HMAMessageViewManager_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C6FA1F7BA9DEAF157A3314661F75216 /* Pods-HMAMessageViewManager_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4E5722A3B4205CE164CEB707CB056B0A /* Pods-HMAMessageViewManager_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 501F663B84205D06B307F7902AE72978 /* Pods-HMAMessageViewManager_Example-dummy.m */; };
 		6000804E8FB3E4F3C01323469D6005BD /* HMAMessageView.h in Headers */ = {isa = PBXBuildFile; fileRef = A1B9C224C8E9F1BDA67C6D3BB69163B2 /* HMAMessageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7697F7450B9E3535E17565596D7794A5 /* HMAMessageViewManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E9E38BAD6ADBC335455888E5B002C533 /* HMAMessageViewManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8630A09E72A0BE3F4992DABD077D8F00 /* Pods-HMAMessageViewManager_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B00F93FA6868642C9847E1063F27D60B /* Pods-HMAMessageViewManager_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B4038EEEEAAA369CA8C4A738B1F8AE7 /* Pods-HMAMessageViewManager_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3D7D2578416B2428C09DBB68C785CF /* Pods-HMAMessageViewManager_Tests-dummy.m */; };
 		89319AC78E29450E301EEF40A9B7A98E /* HMAMessageViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7B675F60829D56038E024C59880A5F /* HMAMessageViewManager.m */; };
 		AFC195685C1AA788FE300E15DF704CB1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		CA29C37D9FE5F993A1BAC73385CF8BCF /* Pods-HMAMessageViewManager_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3D7D2578416B2428C09DBB68C785CF /* Pods-HMAMessageViewManager_Tests-dummy.m */; };
 		F0D38DC24A2844907308DFCE522539DB /* HMAMessageViewManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8026DD2EC82AC89673F1C58F6C1A15D /* HMAMessageViewManager-dummy.m */; };
 		FAD268B4B876727E3D3B5C2930F00F99 /* HMAMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75F39BA011196971475D80D177166D26 /* HMAMessageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0736C17A0CB48DA3DE348293F4955933 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D57C7A151F9375E3DDDD626087CC3A3;
+			remoteInfo = HMAMessageViewManager;
+		};
 		34FF783C69622CA9060CF02C6810313C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -71,14 +78,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		42CC7B576CE82ADD5F07BBEB48921B52 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0188A5EAB1608E8F8E7A72949E0AA83F /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7C985CA43E8872893F13B4161F6D71D4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -92,6 +91,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				30A22F2837DCADF5A282210CA8825955 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F52BB40DA7FA8429465B6F9D123128EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DCF1511ECF1418A9684160D3197D538 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,11 +241,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		838D405B9561FED17F7277769DAC552D /* Headers */ = {
+		85CD92113F9ECBC71DF3BEC4E6AAF56F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8630A09E72A0BE3F4992DABD077D8F00 /* Pods-HMAMessageViewManager_Tests-umbrella.h in Headers */,
+				08AD6E531D8AFAE66BAEA1F1CF870666 /* Pods-HMAMessageViewManager_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,17 +288,18 @@
 			productReference = 1126B5459A5B7046676048E5167DF8BE /* Pods_HMAMessageViewManager_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		67A392E2531E393F4C23F7BB55631F5E /* Pods-HMAMessageViewManager_Tests */ = {
+		6986735CA9F979870CA10E705AD55874 /* Pods-HMAMessageViewManager_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 38B25184E6A41D1CDBF305B8E06CAD3A /* Build configuration list for PBXNativeTarget "Pods-HMAMessageViewManager_Tests" */;
+			buildConfigurationList = 384AB1303076DA91C3A17D652998332D /* Build configuration list for PBXNativeTarget "Pods-HMAMessageViewManager_Tests" */;
 			buildPhases = (
-				57BB31E1ED71E82FF5CE4D2EADD3B887 /* Sources */,
-				42CC7B576CE82ADD5F07BBEB48921B52 /* Frameworks */,
-				838D405B9561FED17F7277769DAC552D /* Headers */,
+				68B9BE2EE66139066375072DB8B76CB9 /* Sources */,
+				F52BB40DA7FA8429465B6F9D123128EB /* Frameworks */,
+				85CD92113F9ECBC71DF3BEC4E6AAF56F /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3506C131AB5EF6EFAE91E2158DF837F5 /* PBXTargetDependency */,
 			);
 			name = "Pods-HMAMessageViewManager_Tests";
 			productName = "Pods-HMAMessageViewManager_Tests";
@@ -338,7 +346,7 @@
 			targets = (
 				6D57C7A151F9375E3DDDD626087CC3A3 /* HMAMessageViewManager */,
 				0C8FB37AC5A06915818A830232DC18BA /* Pods-HMAMessageViewManager_Example */,
-				67A392E2531E393F4C23F7BB55631F5E /* Pods-HMAMessageViewManager_Tests */,
+				6986735CA9F979870CA10E705AD55874 /* Pods-HMAMessageViewManager_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -354,11 +362,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		57BB31E1ED71E82FF5CE4D2EADD3B887 /* Sources */ = {
+		68B9BE2EE66139066375072DB8B76CB9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA29C37D9FE5F993A1BAC73385CF8BCF /* Pods-HMAMessageViewManager_Tests-dummy.m in Sources */,
+				7B4038EEEEAAA369CA8C4A738B1F8AE7 /* Pods-HMAMessageViewManager_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +381,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3506C131AB5EF6EFAE91E2158DF837F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HMAMessageViewManager;
+			target = 6D57C7A151F9375E3DDDD626087CC3A3 /* HMAMessageViewManager */;
+			targetProxy = 0736C17A0CB48DA3DE348293F4955933 /* PBXContainerItemProxy */;
+		};
 		529D199AE9DE3AB3B8D0DB9DDE5F306F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HMAMessageViewManager;
@@ -449,72 +463,6 @@
 			};
 			name = Release;
 		};
-		2E3F057253A2CBEF134AD14AA95EC1C7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC1E73177FDD486267E5BA3BD9EEFD84 /* Pods-HMAMessageViewManager_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-HMAMessageViewManager_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HMAMessageViewManager_Tests/Pods-HMAMessageViewManager_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_HMAMessageViewManager_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		523532EB28C88E85BA84C57C52FA5DC9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF22E465CD47B7636A3B75D3793D7776 /* Pods-HMAMessageViewManager_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-HMAMessageViewManager_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HMAMessageViewManager_Tests/Pods-HMAMessageViewManager_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_HMAMessageViewManager_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		5BC9DF55403834EEBFC138368CC125A0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 825DA0FC35C67EB7D5DD417022FAFB09 /* Pods-HMAMessageViewManager_Example.release.xcconfig */;
@@ -548,6 +496,39 @@
 			};
 			name = Release;
 		};
+		5F147169C85DCA82F4B9E85A889AA5DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC1E73177FDD486267E5BA3BD9EEFD84 /* Pods-HMAMessageViewManager_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HMAMessageViewManager_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HMAMessageViewManager_Tests/Pods-HMAMessageViewManager_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HMAMessageViewManager_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		7E9A119EE5B54E64ACD88BF9D7F49949 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3363E4FD04BA0507AE75A474B8AD40CD /* Pods-HMAMessageViewManager_Example.debug.xcconfig */;
@@ -580,6 +561,39 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		96844377CFF28187DE67F64A9E68C609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF22E465CD47B7636A3B75D3793D7776 /* Pods-HMAMessageViewManager_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HMAMessageViewManager_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HMAMessageViewManager_Tests/Pods-HMAMessageViewManager_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HMAMessageViewManager_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		D2498BB4799C7EDD9B10FF082392A112 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -673,11 +687,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		38B25184E6A41D1CDBF305B8E06CAD3A /* Build configuration list for PBXNativeTarget "Pods-HMAMessageViewManager_Tests" */ = {
+		384AB1303076DA91C3A17D652998332D /* Build configuration list for PBXNativeTarget "Pods-HMAMessageViewManager_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2E3F057253A2CBEF134AD14AA95EC1C7 /* Debug */,
-				523532EB28C88E85BA84C57C52FA5DC9 /* Release */,
+				5F147169C85DCA82F4B9E85A889AA5DE /* Debug */,
+				96844377CFF28187DE67F64A9E68C609 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
