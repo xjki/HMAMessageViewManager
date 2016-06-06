@@ -19,9 +19,10 @@
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
-		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		6003F5BC195388D20070C39A /* HMAMessageViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* HMAMessageViewTests.m */; };
 		681FA1CF1D057B590006CAB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 681FA1CE1D057B590006CAB7 /* LaunchScreen.storyboard */; };
 		681FA1D11D05863E0006CAB7 /* CHANGELOG.md in Sources */ = {isa = PBXBuildFile; fileRef = 681FA1D01D05863E0006CAB7 /* CHANGELOG.md */; };
+		681FA1D41D0591C20006CAB7 /* HMAMessageViewManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 681FA1D21D0591A60006CAB7 /* HMAMessageViewManagerTests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		D2AAE33C4090E1E74AD55F36 /* Pods_HMAMessageViewManager_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D59FBD69DF56D1BBBCE59A7 /* Pods_HMAMessageViewManager_Example.framework */; };
 		EA50ED81DDDCD3F01E2CF5A2 /* Pods_HMAMessageViewManager_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1F06DC0E42588D707D1D0F /* Pods_HMAMessageViewManager_Tests.framework */; };
@@ -58,10 +59,11 @@
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
+		6003F5BB195388D20070C39A /* HMAMessageViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMAMessageViewTests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		681FA1CE1D057B590006CAB7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		681FA1D01D05863E0006CAB7 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
+		681FA1D21D0591A60006CAB7 /* HMAMessageViewManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMAMessageViewManagerTests.m; sourceTree = "<group>"; };
 		6D59FBD69DF56D1BBBCE59A7 /* Pods_HMAMessageViewManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HMAMessageViewManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8E84BC5FB4A9A8849D4A58C8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -172,7 +174,8 @@
 		6003F5B5195388D20070C39A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				6003F5BB195388D20070C39A /* Tests.m */,
+				6003F5BB195388D20070C39A /* HMAMessageViewTests.m */,
+				681FA1D21D0591A60006CAB7 /* HMAMessageViewManagerTests.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
 			);
 			path = Tests;
@@ -408,7 +411,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F5BC195388D20070C39A /* Tests.m in Sources */,
+				6003F5BC195388D20070C39A /* HMAMessageViewTests.m in Sources */,
+				681FA1D41D0591C20006CAB7 /* HMAMessageViewManagerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,7 +553,7 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 588E7BBF361F9F9AA8F2143B /* Pods-HMAMessageViewManager_Tests.debug.xcconfig */;
+			baseConfigurationReference = FA9C0B503C3789467387B387 /* Pods-HMAMessageViewManager_Example.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -573,7 +577,7 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A40601D6159EB817A8A4A871 /* Pods-HMAMessageViewManager_Tests.release.xcconfig */;
+			baseConfigurationReference = B3C6B5BD68F041334887188C /* Pods-HMAMessageViewManager_Example.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
