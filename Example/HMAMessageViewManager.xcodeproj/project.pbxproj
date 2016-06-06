@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		436AABC090875E63E6ED02D8 /* Pods_HMAMessageViewManager_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1F06DC0E42588D707D1D0F /* Pods_HMAMessageViewManager_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -25,7 +26,6 @@
 		681FA1D41D0591C20006CAB7 /* HMAMessageViewManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 681FA1D21D0591A60006CAB7 /* HMAMessageViewManagerTests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		D2AAE33C4090E1E74AD55F36 /* Pods_HMAMessageViewManager_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D59FBD69DF56D1BBBCE59A7 /* Pods_HMAMessageViewManager_Example.framework */; };
-		EA50ED81DDDCD3F01E2CF5A2 /* Pods_HMAMessageViewManager_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1F06DC0E42588D707D1D0F /* Pods_HMAMessageViewManager_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +40,8 @@
 
 /* Begin PBXFileReference section */
 		0586CF14A62BD50F1A10E07A /* HMAMessageViewManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HMAMessageViewManager.podspec; path = ../HMAMessageViewManager.podspec; sourceTree = "<group>"; };
+		48BC57D83849BBABB21FFDD7 /* Pods-HMAMessageViewManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HMAMessageViewManager_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HMAMessageViewManager_Tests/Pods-HMAMessageViewManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4C1F06DC0E42588D707D1D0F /* Pods_HMAMessageViewManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HMAMessageViewManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		588E7BBF361F9F9AA8F2143B /* Pods-HMAMessageViewManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HMAMessageViewManager_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HMAMessageViewManager_Tests/Pods-HMAMessageViewManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* HMAMessageViewManager_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HMAMessageViewManager_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -67,8 +67,8 @@
 		6D59FBD69DF56D1BBBCE59A7 /* Pods_HMAMessageViewManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HMAMessageViewManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8E84BC5FB4A9A8849D4A58C8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		A40601D6159EB817A8A4A871 /* Pods-HMAMessageViewManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HMAMessageViewManager_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HMAMessageViewManager_Tests/Pods-HMAMessageViewManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B3C6B5BD68F041334887188C /* Pods-HMAMessageViewManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HMAMessageViewManager_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-HMAMessageViewManager_Example/Pods-HMAMessageViewManager_Example.release.xcconfig"; sourceTree = "<group>"; };
+		E8272A4950E58E64F69785D6 /* Pods-HMAMessageViewManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HMAMessageViewManager_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HMAMessageViewManager_Tests/Pods-HMAMessageViewManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F4A650BDC79CFD8EA65BF416 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		FA9C0B503C3789467387B387 /* Pods-HMAMessageViewManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HMAMessageViewManager_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HMAMessageViewManager_Example/Pods-HMAMessageViewManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,7 +92,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				EA50ED81DDDCD3F01E2CF5A2 /* Pods_HMAMessageViewManager_Tests.framework in Frameworks */,
+				436AABC090875E63E6ED02D8 /* Pods_HMAMessageViewManager_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,8 +104,8 @@
 			children = (
 				FA9C0B503C3789467387B387 /* Pods-HMAMessageViewManager_Example.debug.xcconfig */,
 				B3C6B5BD68F041334887188C /* Pods-HMAMessageViewManager_Example.release.xcconfig */,
-				588E7BBF361F9F9AA8F2143B /* Pods-HMAMessageViewManager_Tests.debug.xcconfig */,
-				A40601D6159EB817A8A4A871 /* Pods-HMAMessageViewManager_Tests.release.xcconfig */,
+				48BC57D83849BBABB21FFDD7 /* Pods-HMAMessageViewManager_Tests.debug.xcconfig */,
+				E8272A4950E58E64F69785D6 /* Pods-HMAMessageViewManager_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -209,12 +209,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "HMAMessageViewManager_Example" */;
 			buildPhases = (
-				46A365CA94A5B8978CF3C92F /* 📦 Check Pods Manifest.lock */,
+				46A365CA94A5B8978CF3C92F /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				5830296873FEA773FC485E91 /* 📦 Embed Pods Frameworks */,
-				39198D38E514866F3A257E5A /* 📦 Copy Pods Resources */,
+				5830296873FEA773FC485E91 /* [CP] Embed Pods Frameworks */,
+				39198D38E514866F3A257E5A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -229,12 +229,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "HMAMessageViewManager_Tests" */;
 			buildPhases = (
-				20943095BF3CB75270479BC5 /* 📦 Check Pods Manifest.lock */,
+				7772EDB67058FBA970EDA530 /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				63C726A1FE3F993A96DEBB63 /* 📦 Embed Pods Frameworks */,
-				1A6495505CC9B5BE4D7FA77B /* 📦 Copy Pods Resources */,
+				F8574BC648E6D98436A5E7A6 /* [CP] Embed Pods Frameworks */,
+				81F334B87B11456EA8BF7E96 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -303,44 +303,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1A6495505CC9B5BE4D7FA77B /* 📦 Copy Pods Resources */ = {
+		39198D38E514866F3A257E5A /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HMAMessageViewManager_Tests/Pods-HMAMessageViewManager_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		20943095BF3CB75270479BC5 /* 📦 Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		39198D38E514866F3A257E5A /* 📦 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,14 +318,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HMAMessageViewManager_Example/Pods-HMAMessageViewManager_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		46A365CA94A5B8978CF3C92F /* 📦 Check Pods Manifest.lock */ = {
+		46A365CA94A5B8978CF3C92F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,14 +333,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		5830296873FEA773FC485E91 /* 📦 Embed Pods Frameworks */ = {
+		5830296873FEA773FC485E91 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,14 +348,44 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HMAMessageViewManager_Example/Pods-HMAMessageViewManager_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		63C726A1FE3F993A96DEBB63 /* 📦 Embed Pods Frameworks */ = {
+		7772EDB67058FBA970EDA530 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		81F334B87B11456EA8BF7E96 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HMAMessageViewManager_Tests/Pods-HMAMessageViewManager_Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8574BC648E6D98436A5E7A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -553,7 +553,7 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 588E7BBF361F9F9AA8F2143B /* Pods-HMAMessageViewManager_Tests.debug.xcconfig */;
+			baseConfigurationReference = 48BC57D83849BBABB21FFDD7 /* Pods-HMAMessageViewManager_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -577,7 +577,7 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A40601D6159EB817A8A4A871 /* Pods-HMAMessageViewManager_Tests.release.xcconfig */;
+			baseConfigurationReference = E8272A4950E58E64F69785D6 /* Pods-HMAMessageViewManager_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
