@@ -5,7 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/HMAMessageViewManager.svg?style=flat)](http://cocoapods.org/pods/HMAMessageViewManager)
 [![Platform](https://img.shields.io/cocoapods/p/HMAMessageViewManager.svg?style=flat)](http://cocoapods.org/pods/HMAMessageViewManager)
 
-Dead simple notification message banners (appearing from bottom) for iOS. 
+Dead simple notification message banners (appearing from bottom) for iOS.
+
 ![example mov](https://cloud.githubusercontent.com/assets/747340/11300924/7f996164-8f9b-11e5-9830-9d29793ba143.gif)
 
 * No dependencies
@@ -58,7 +59,7 @@ pod "HMAMessageViewManager"
 
 ## Author
 
-Jurgis Kirsakmens, jki@jki.lv
+Jurgis Kirsakmens, http://twitter.com/xjki
 
 ## License
 
