@@ -1,6 +1,6 @@
 {
   "name": "HMAMessageViewManager",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "summary": "Dead simple notification message banners (appearing from bottom of the view) for iOS",
   "description": "Dead simple notification message banners (appearing from bottom) for iOS. Xcode 7 and iOS9 SDK.\n    * No dependencies\n    * Rotation support (uses autolayout)\n    * Error, Warning, Success and Default types\n    * Customize fonts via UIAppearance\nMessage banner hides automatically after seconds defined with kMessageViewDismissInSeconds constant or by user tap.",
   "homepage": "https://github.com/xjki/HMAMessageViewManager",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/xjki/HMAMessageViewManager.git",
-    "tag": "0.1.2"
+    "tag": "0.1.3"
   },
   "platforms": {
     "ios": "8.0"
