@@ -29,9 +29,10 @@ typedef NS_ENUM(NSInteger, HMAMessageViewType) {
                                subtitle:(nullable NSString *)pSubtitle
                                    type:(HMAMessageViewType)pType
                                  inView:(nonnull UIView *)pHostingView
+                                 toolbar:(nullable UIToolbar *)pToolbar
                        tabBarController:(nullable UITabBarController *)pTabBarController;
 
-/// Show message by adding to hosting view and then animating from bottom, authides in seconds defined in kMessageViewDismissInSeconds
+/// Show message by adding to hosting view and then animating from bottom, authodes in seconds defined in kMessageViewDismissInSeconds
 - (void) showMessage;
 
 /// Hides message by animating to bottom, then removing from hosting view and informing HMAMessageViewManager to remove itself from managed messages

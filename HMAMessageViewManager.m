@@ -51,10 +51,12 @@
     @synchronized(self) {
         // for UITableViewController use navigation controller for displaying message
         UIView *hostingView = ([pController isKindOfClass:[UITableViewController class]]) ? pController.navigationController.view : pController.view;
+        UIToolbar *toolbar = pController.navigationController.toolbar;
         HMAMessageView *message = [[HMAMessageView alloc] initWithTitle:pTitle
                                                                subtitle:pSubtitle
                                                                    type:pType
                                                                  inView:hostingView
+                                                                toolbar:toolbar
                                                        tabBarController:pController.tabBarController];
         [self.messages addObject:message];
         dispatch_async(dispatch_get_main_queue(), ^{

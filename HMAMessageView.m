@@ -60,13 +60,17 @@ static NSString *const kMessageSubtitleFontName = @"AvenirNext-Regular";
                       subtitle:(NSString *)pSubtitle
                           type:(HMAMessageViewType)pType
                         inView:(UIView *)pHostingView
+                       toolbar:(UIToolbar *)pToolbar
                         tabBarController:(UITabBarController *)pTabBarController
 {
     CGRect frame = CGRectMake(0, pHostingView.frame.size.height, pHostingView.frame.size.width, kMessageViewHeight);
     if (self = [super initWithFrame:frame]) {
         _hostingView = pHostingView;
         _isActiveMessage = NO;
-        _bottomConstraintExtraConstantIfTabbar = (pTabBarController) ? pTabBarController.tabBar.frame.size.height : 0;
+        _bottomConstraintExtraConstantIfTabbar = (pTabBarController && !pTabBarController.tabBar.isHidden) ? pTabBarController.tabBar.frame.size.height : 0;
+        if (pToolbar && !pToolbar.hidden && pToolbar.barPosition == UIBarPositionBottom) {
+            _bottomConstraintExtraConstantIfTabbar = _bottomConstraintExtraConstantIfTabbar + pToolbar.frame.size.height;
+        }
         // message view
         self.translatesAutoresizingMaskIntoConstraints = NO;
         self.backgroundColor = [HMAMessageView backgroundColorForType:pType];
