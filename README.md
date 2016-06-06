@@ -35,7 +35,7 @@ For convenience you can also add simple UIViewController category class, for  ex
 @implementation UIViewController (HMAMessages)
 
 - (void) my_showWarningMessage:(NSString *)pTitle {
-    [self showMessageWithTitle:NSLocalizedString(@"Ooops!", @"Warning title for invalid data") subtitle:pTitle messageType:HMAMessageViewTypeWarning];
+    [[HMAMessageViewManager sharedManager] showMessageInController:self title:NSLocalizedString(@"Ooops!", @"Warning title for invalid data") subtitle:pTitle type:HMAMessageViewTypeWarning];
 }
 
 @end
