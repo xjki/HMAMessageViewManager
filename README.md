@@ -85,3 +85,9 @@ Jurgis Kirsakmens, https://twitter.com/xjki
 ## License
 
 HMAMessageViewManager is available under the MIT license. See the LICENSE file for more info.
+
+
+## Apps using library
+
+[Landlordy for iPhone/iPad](http://landlordyapp.com)
+[DrinkControl for iPhone](http://drinkcontrolapp.com)
