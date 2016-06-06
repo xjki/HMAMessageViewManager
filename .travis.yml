@@ -5,7 +5,9 @@ osx_image: xcode7.3
     # - brew install xctool
 script:
     - xcodebuild -showsdks
-    - xcodebuild clean build test -workspace Example/HMAMessageViewManager.xcworkspace -scheme HMAMessageViewManager-Tests -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO
+    - cd Example
+    - pod install
+    - xcodebuild clean build test -workspace HMAMessageViewManager.xcworkspace -scheme HMAMessageViewManager-Tests -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO
 
 notifications:
   email:
