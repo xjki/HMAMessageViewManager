@@ -5,9 +5,15 @@
 //  Copyright © 2016 Jurgis Kirsakmens. All rights reserved.
 //
 
+
+#pragma once // Ideally should not be imported more than once but it might happen for indirect imports via Swift bridging headers
+
+#ifndef HMAMessageViewManager_h
+
+#define HMAMessageViewManager_h
+
 @import Foundation;
 #import "HMAMessageView.h"
-
 
 @interface HMAMessageViewManager : NSObject
 
@@ -29,3 +35,5 @@
 - (void) messageViewDidHide:(nonnull HMAMessageView *)pMessage;
 
 @end
+
+#endif

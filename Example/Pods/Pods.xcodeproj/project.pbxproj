@@ -221,10 +221,10 @@
 		D8BCD97DD03113BB13F1E8B586735D87 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				A1B9C224C8E9F1BDA67C6D3BB69163B2 /* HMAMessageView.h */,
-				75F39BA011196971475D80D177166D26 /* HMAMessageView.m */,
 				E9E38BAD6ADBC335455888E5B002C533 /* HMAMessageViewManager.h */,
 				4C7B675F60829D56038E024C59880A5F /* HMAMessageViewManager.m */,
+				A1B9C224C8E9F1BDA67C6D3BB69163B2 /* HMAMessageView.h */,
+				75F39BA011196971475D80D177166D26 /* HMAMessageView.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
