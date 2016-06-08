@@ -22,7 +22,6 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* HMAMessageViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* HMAMessageViewTests.m */; };
 		681FA1CF1D057B590006CAB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 681FA1CE1D057B590006CAB7 /* LaunchScreen.storyboard */; };
-		681FA1D11D05863E0006CAB7 /* CHANGELOG.md in Sources */ = {isa = PBXBuildFile; fileRef = 681FA1D01D05863E0006CAB7 /* CHANGELOG.md */; };
 		681FA1D41D0591C20006CAB7 /* HMAMessageViewManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 681FA1D21D0591A60006CAB7 /* HMAMessageViewManagerTests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		D2AAE33C4090E1E74AD55F36 /* Pods_HMAMessageViewManager_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D59FBD69DF56D1BBBCE59A7 /* Pods_HMAMessageViewManager_Example.framework */; };
@@ -62,7 +61,6 @@
 		6003F5BB195388D20070C39A /* HMAMessageViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMAMessageViewTests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		681FA1CE1D057B590006CAB7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		681FA1D01D05863E0006CAB7 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
 		681FA1D21D0591A60006CAB7 /* HMAMessageViewManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMAMessageViewManagerTests.m; sourceTree = "<group>"; };
 		6D59FBD69DF56D1BBBCE59A7 /* Pods_HMAMessageViewManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HMAMessageViewManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -194,7 +192,6 @@
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				681FA1D01D05863E0006CAB7 /* CHANGELOG.md */,
 				0586CF14A62BD50F1A10E07A /* HMAMessageViewManager.podspec */,
 				F4A650BDC79CFD8EA65BF416 /* README.md */,
 				8E84BC5FB4A9A8849D4A58C8 /* LICENSE */,
@@ -215,6 +212,7 @@
 				6003F588195388D20070C39A /* Resources */,
 				5830296873FEA773FC485E91 /* [CP] Embed Pods Frameworks */,
 				39198D38E514866F3A257E5A /* [CP] Copy Pods Resources */,
+				68DFDF4FAB24B3E87A2D3693 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -235,6 +233,7 @@
 				6003F5AC195388D20070C39A /* Resources */,
 				F8574BC648E6D98436A5E7A6 /* [CP] Embed Pods Frameworks */,
 				81F334B87B11456EA8BF7E96 /* [CP] Copy Pods Resources */,
+				F9E5B09BEFCB6A80B9301ECD /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -348,6 +347,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HMAMessageViewManager_Example/Pods-HMAMessageViewManager_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		68DFDF4FAB24B3E87A2D3693 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HMAMessageViewManager_Example/Pods-HMAMessageViewManager_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7772EDB67058FBA970EDA530 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -393,6 +407,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HMAMessageViewManager_Tests/Pods-HMAMessageViewManager_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F9E5B09BEFCB6A80B9301ECD /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HMAMessageViewManager_Tests/Pods-HMAMessageViewManager_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -403,7 +432,6 @@
 				6003F59E195388D20070C39A /* HMAAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* HMAViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
-				681FA1D11D05863E0006CAB7 /* CHANGELOG.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

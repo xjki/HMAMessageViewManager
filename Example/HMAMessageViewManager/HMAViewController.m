@@ -4,6 +4,16 @@
 
 @implementation HMAViewController
 
+- (void) viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    // set custom appearance for message banners
+    [[HMAMessageView appearance] setTitleFont:[UIFont boldSystemFontOfSize:14]];
+    [[HMAMessageView appearance] setSubtitleFont:[UIFont systemFontOfSize:10]];
+    // [[HMAMessageView appearance] setHideMessagesAfterSeconds:@4];
+}
+
+
 - (IBAction) typeChanged:(UISegmentedControl *)sender {
     HMAMessageViewManager *messageManager = [HMAMessageViewManager sharedManager];
     if (sender.selectedSegmentIndex == 0) {

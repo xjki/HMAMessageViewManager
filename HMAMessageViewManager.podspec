@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HMAMessageViewManager'
-  s.version          = '0.1.3'
+  s.version          = '0.1.5'
   s.summary          = 'Dead simple notification message banners (appearing from bottom of the view) for iOS'
 
 # This description is used to generate tags and improve search results.
@@ -23,7 +23,7 @@ Dead simple notification message banners (appearing from bottom) for iOS. Xcode 
     * Rotation support (uses autolayout)
     * Error, Warning, Success and Default types
     * Customize fonts via UIAppearance
-Message banner hides automatically after seconds defined with kMessageViewDismissInSeconds constant or by user tap.
+Message banner hides automatically after seconds defined by appearance settings (default - 3 secs) or by user tap.
                        DESC
 
   s.homepage         = 'https://github.com/xjki/HMAMessageViewManager'

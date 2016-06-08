@@ -12,7 +12,7 @@
 
 #pragma mark Private methods
 
-- (instancetype) init {
+- (nullable instancetype) init {
     if (self = [super init]) {
         _messages = [NSMutableArray new];
     }
@@ -33,7 +33,7 @@
 
 #pragma mark Public methods
 
-+ (instancetype) sharedManager {
++ (nullable instancetype) sharedManager {
     static HMAMessageViewManager *sharedManager = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -43,10 +43,10 @@
 }
 
 
-- (HMAMessageView *) showMessageInController:(UIViewController *)pController
-                                       title:(NSString *)pTitle
-                                    subtitle:(NSString *)pSubtitle
-                                        type:(HMAMessageViewType)pType
+- (nullable HMAMessageView *) showMessageInController:(nonnull UIViewController *)pController
+                                                title:(nonnull NSString *)pTitle
+                                             subtitle:(nullable NSString *)pSubtitle
+                                                 type:(HMAMessageViewType)pType
 {
     @synchronized(self) {
         // for UITableViewController use navigation controller for displaying message

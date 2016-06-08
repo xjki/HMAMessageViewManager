@@ -15,7 +15,7 @@ Dead simple notification message banners (appearing from bottom) for iOS.
 * Customize fonts via UIAppearance
 * No legacy code ;)
 
-Message banner hides automatically after seconds defined with kMessageViewDismissInSeconds constant or by user tap.
+Message banner hides automatically after seconds you can define via appearance proxy (default is 3 seconds) or by user tap.
 
 
 ## Sample Usage
@@ -49,13 +49,14 @@ and then just use
 
 ## Customization
 
-To customize font/font size for message title and subtitle in you app delegate (or any other place setting default appearance):
+To customize font/font size for message title/subtitle and message auto-hide time in you app delegate (or any other place setting default appearance):
 
 ```objective-c
 #import "HMAMessageView.h"
 ...
-[[HMAMessageView appearance] setTitleFont:[UIFont boldSystemFontOfSize:10]];
-[[HMAMessageView appearance] setSubtitleFont:[UIFont boldSystemFontOfSize:6]];
+[[HMAMessageView appearance] setTitleFont:[UIFont boldSystemFontOfSize:12]];
+[[HMAMessageView appearance] setSubtitleFont:[UIFont boldSystemFontOfSize:7]];
+[[HMAMessageView appearance] setHideMessagesAfterSeconds:@4];
 ```
 
 ## Example
@@ -86,11 +87,3 @@ Jurgis Kirsakmens, https://twitter.com/xjki
 
 HMAMessageViewManager is available under the MIT license. See the LICENSE file for more info.
 
-
-## Related Apps
-
-[Landlordy](http://landlordyapp.com)
-
-[DrinkControl](http://drinkcontrolapp.com)
-
-[Satori](https://itunes.apple.com/us/app/interneta-zurnals-satori/id763454429?mt=8)

@@ -21,8 +21,8 @@ blue:((float)(rgbValue & 0xFF))/255.0f alpha:1.0f]
 
 @implementation HMAMessageView
 
-static const int kMessageViewHeight = 80;
-static const int kMessageViewDismissInSeconds = 3;
+static const NSInteger kMessageViewHeight = 80;
+static const NSInteger kMessageViewDismissInSeconds = 3;
 static NSString *const kMessageTitleFontName =  @"AvenirNext-Medium";
 static NSString *const kMessageSubtitleFontName = @"AvenirNext-Regular";
 
@@ -48,9 +48,16 @@ static NSString *const kMessageSubtitleFontName = @"AvenirNext-Regular";
                                                      : [UIFont fontWithName:kMessageTitleFontName size:14.0f];
 }
 
+
 - (nonnull UIFont *) messageSubtitleFont {
     return ([[HMAMessageView appearance] subtitleFont]) ? [[HMAMessageView appearance] subtitleFont]
                                                         : [UIFont fontWithName:kMessageSubtitleFontName size:12.0f];
+}
+
+
+- (NSUInteger) dismissMessageAfterSeconds {
+    return ([[HMAMessageView appearance] hideMessagesAfterSeconds]) ? [[[HMAMessageView appearance] hideMessagesAfterSeconds] integerValue]
+                                                                    : kMessageViewDismissInSeconds;
 }
 
 
@@ -143,7 +150,7 @@ static NSString *const kMessageSubtitleFontName = @"AvenirNext-Regular";
         self.alpha = 0.9f;
         [self layoutIfNeeded];
     } completion:^(BOOL finished) {
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, kMessageViewDismissInSeconds * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, self.dismissMessageAfterSeconds * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
             [self hideMessage];
         });
     }];

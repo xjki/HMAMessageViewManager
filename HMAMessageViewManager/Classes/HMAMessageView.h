@@ -19,6 +19,7 @@ typedef NS_ENUM(NSInteger, HMAMessageViewType) {
 
 @property (nonatomic, strong, nullable) UIFont *titleFont UI_APPEARANCE_SELECTOR;
 @property (nonatomic, strong, nullable) UIFont *subtitleFont UI_APPEARANCE_SELECTOR;
+@property (nonatomic, strong, nullable) NSNumber *hideMessagesAfterSeconds UI_APPEARANCE_SELECTOR;
 
 /// Returns YES if message is currently visible on screen
 @property (nonatomic, readonly) BOOL isActiveMessage;
