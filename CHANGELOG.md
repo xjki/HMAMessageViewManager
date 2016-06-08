@@ -1,5 +1,18 @@
 # Change Log
 
+## [0.1.5](https://github.com/xjki/HMAMessageViewManager/tree/0.1.5) (2016-06-08)
+[Full Changelog](https://github.com/xjki/HMAMessageViewManager/compare/0.1.4...0.1.5)
+
+**Implemented enhancements:**
+
+- Option to customize message display time [\#5](https://github.com/xjki/HMAMessageViewManager/issues/5)
+
+## [0.1.4](https://github.com/xjki/HMAMessageViewManager/tree/0.1.4) (2016-06-07)
+[Full Changelog](https://github.com/xjki/HMAMessageViewManager/compare/0.1.3...0.1.4)
+
+## [0.1.3](https://github.com/xjki/HMAMessageViewManager/tree/0.1.3) (2016-06-06)
+[Full Changelog](https://github.com/xjki/HMAMessageViewManager/compare/0.1.2...0.1.3)
+
 ## [0.1.2](https://github.com/xjki/HMAMessageViewManager/tree/0.1.2) (2016-06-06)
 [Full Changelog](https://github.com/xjki/HMAMessageViewManager/compare/0.1.1...0.1.2)
 
