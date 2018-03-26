@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HMAMessageViewManager'
-  s.version          = '0.1.5'
+  s.version          = '0.1.6'
   s.summary          = 'Dead simple notification message banners (appearing from bottom of the view) for iOS'
 
 # This description is used to generate tags and improve search results.
