@@ -1,1 +1,0 @@
-../../../../../HMAMessageViewManager/Classes/HMAMessageView.h

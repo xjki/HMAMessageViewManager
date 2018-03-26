@@ -8,8 +8,8 @@
     [super viewWillAppear:animated];
     
     // set custom appearance for message banners
-    [[HMAMessageView appearance] setTitleFont:[UIFont boldSystemFontOfSize:14]];
-    [[HMAMessageView appearance] setSubtitleFont:[UIFont systemFontOfSize:10]];
+    [[HMAMessageView appearance] setTitleFont:[UIFont boldSystemFontOfSize:16]];
+    [[HMAMessageView appearance] setSubtitleFont:[UIFont systemFontOfSize:12]];
     // [[HMAMessageView appearance] setHideMessagesAfterSeconds:@4];
 }
 
@@ -20,7 +20,7 @@
         [messageManager showMessageInController:self title:@"What a error!" subtitle:@"Nice error you have there" type:HMAMessageViewTypeError];
     }
     else if (sender.selectedSegmentIndex == 1) {
-        [messageManager showMessageInController:self title:@"Attention!" subtitle:@"Kinda scary button you pressed" type:HMAMessageViewTypeWarning];
+        [messageManager showMessageInController:self title:@"Attention!" subtitle:@"Kinda scary button you pressed - I don't even know what to do with this warning..." type:HMAMessageViewTypeWarning];
     }
     else if (sender.selectedSegmentIndex == 2) {
         [messageManager showMessageInController:self title:@"Finally!" subtitle:@"This is awesome!" type:HMAMessageViewTypeSuccess];

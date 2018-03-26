@@ -70,7 +70,11 @@ static NSString *const kMessageSubtitleFontName = @"AvenirNext-Regular";
                        toolbar:(UIToolbar *)pToolbar
                         tabBarController:(UITabBarController *)pTabBarController
 {
-    CGRect frame = CGRectMake(0, pHostingView.frame.size.height, pHostingView.frame.size.width, kMessageViewHeight);
+    CGFloat bottomOffset = 0;
+    if (@available(iOS 11.0, *)) {
+        bottomOffset = pHostingView.window.safeAreaInsets.bottom;
+    }
+    CGRect frame = CGRectMake(0, pHostingView.frame.size.height, pHostingView.frame.size.width, kMessageViewHeight + bottomOffset);
     if (self = [super initWithFrame:frame]) {
         _hostingView = pHostingView;
         _isActiveMessage = NO;
@@ -99,7 +103,12 @@ static NSString *const kMessageSubtitleFontName = @"AvenirNext-Regular";
         if (!pSubtitle || [pSubtitle isEqualToString:@""]) {
             NSDictionary *views = @{@"title" : titleLabel};
             [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-8-[title]-8-|" options:0 metrics:nil views:views]];
-            [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-8-[title]-8-|" options:0 metrics:nil views:views]];
+            [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-8-[title]" options:0 metrics:nil views:views]];
+            NSLayoutConstraint *bottomConstraint = [NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeBottom
+                                                                                relatedBy:NSLayoutRelationEqual
+                                                                                   toItem:titleLabel attribute:NSLayoutAttributeBottom
+                                                                               multiplier:1.0 constant:8 + bottomOffset];
+            [self addConstraint:bottomConstraint];
         }
         else {
             // has subtitle label
@@ -116,9 +125,13 @@ static NSString *const kMessageSubtitleFontName = @"AvenirNext-Regular";
             NSDictionary *views = @{@"title" : titleLabel, @"subtitle" : subtitleLabel};
             [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-8-[title]-8-|" options:0 metrics:nil views:views]];
             [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-8-[subtitle]-8-|" options:0 metrics:nil views:views]];
-            [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-8-[title]-4-[subtitle]-8-|" options:0 metrics:nil views:views]];
-        }
-    }
+            [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-8-[title]-4-[subtitle]" options:0 metrics:nil views:views]];
+            NSLayoutConstraint *bottomConstraint = [NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeBottom
+                                                                                relatedBy:NSLayoutRelationEqual
+                                                                                   toItem:subtitleLabel attribute:NSLayoutAttributeBottom
+                                                                               multiplier:1.0 constant:8 + bottomOffset];
+            [self addConstraint:bottomConstraint];
+        }    }
     return self;
 }
 
@@ -139,16 +152,14 @@ static NSString *const kMessageSubtitleFontName = @"AvenirNext-Regular";
         self.bottomPositionConstraint = [NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeBottom
                                                                      relatedBy:NSLayoutRelationEqual
                                                                         toItem:self.hostingView attribute:NSLayoutAttributeBottom
-                                                                    multiplier:1.0 constant:self.frame.size.height - self.bottomConstraintExtraConstantIfTabbar];
+                                                                    multiplier:1.0 constant:0 - self.bottomConstraintExtraConstantIfTabbar];
         [self.hostingView addConstraint:self.bottomPositionConstraint];
         [self layoutIfNeeded];
     }
 
     // set attributes/constraints for showing animation
-    [UIView animateWithDuration:0.3 delay:0 usingSpringWithDamping:.5f initialSpringVelocity:0.5f options:0 animations:^{
-        self.bottomPositionConstraint.constant = 0 - self.bottomConstraintExtraConstantIfTabbar;
+    [UIView animateWithDuration:0.3 delay:0 usingSpringWithDamping:.5f initialSpringVelocity:5.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         self.alpha = 0.9f;
-        [self layoutIfNeeded];
     } completion:^(BOOL finished) {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, self.dismissMessageAfterSeconds * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
             [self hideMessage];
@@ -163,10 +174,9 @@ static NSString *const kMessageSubtitleFontName = @"AvenirNext-Regular";
         return;
     }
     self.isHiding = YES;
-    [UIView animateWithDuration:0.3f animations:^{
-        self.bottomPositionConstraint.constant = self.frame.size.height - self.bottomConstraintExtraConstantIfTabbar;
+
+    [UIView animateWithDuration:0.35 animations:^{
         self.alpha = 0;
-        [self layoutIfNeeded];
     } completion:^(BOOL finished) {
         [self removeFromSuperview];
         self.isActiveMessage = NO;

@@ -60,7 +60,7 @@
 
     // then - after animation finishes
     [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.3]];
-    XCTAssertFalse([[self.view subviews] containsObject:message], @"Message is not removed from view hieirachy after 0.3 seconds (animation time)");
+    XCTAssertFalse([[self.view subviews] containsObject:message], @"Message is not removed from view hierachy after 0.3 seconds (animation time)");
 }
 
 
