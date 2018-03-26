@@ -8,7 +8,7 @@ script:
     - xcodebuild -showsdks
     - cd Example
     - pod install
-    - xcodebuild clean build test -workspace HMAMessageViewManager.xcworkspace -scheme HMAMessageViewManager-Tests -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO
+    - xcodebuild clean build test -workspace HMAMessageViewManager.xcworkspace -scheme HMAMessageViewManager-Tests -sdk iphonesimulator11.2 ONLY_ACTIVE_ARCH=NO
 
 notifications:
   email:
