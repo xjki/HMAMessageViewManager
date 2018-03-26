@@ -9,7 +9,7 @@ script:
     - cd Example
     - pod install
     - xcrun simctl list
-    - xcodebuild clean build test -workspace HMAMessageViewManager.xcworkspace -scheme HMAMessageViewManager-Tests -sdk iphonesimulator11.2 ONLY_ACTIVE_ARCH=NO
+    - xcodebuild clean build test -workspace HMAMessageViewManager.xcworkspace -scheme HMAMessageViewManager-Tests -sdk iphonesimulator11.2 -destination "platform=iOS Simulator,name=iPhone 7,OS=11.2" ONLY_ACTIVE_ARCH=NO
 
 notifications:
   email:
